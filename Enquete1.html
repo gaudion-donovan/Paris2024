@@ -1,3 +1,11 @@
+<!--                                                                              --> 
+<!-- Projet : Paris 2024                                                          --> 
+<!--                                                                              --> 
+<!-- Auteur : Jourquin Cédric, Gaudion Donovan  | date: 08/11/2018                -->
+<!--                                                                              --> 
+<!-- nom du fichier : Enquete1.html                                                  -->
+<!--                                                                              --> 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +16,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
-
+    <title>Enquête de satisfaction</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/LogoParis2024.ico" type="image/x-icon">
+    <link rel="icon" href="img/LogoParis2024.png" type="image/png">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,7 +30,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-
   </head>
 
   <body>
@@ -51,7 +60,7 @@
               <a class="nav-link" href="index.html">Menu3</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="post.html">Enquête</a>
+              <a class="nav-link" href="Enquete1.html">Enquête</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -63,18 +72,15 @@
         </div>
       </div>
     </nav>
+
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+    <header class="masthead" style="background-image: url('img/Paris.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="post-heading">
-              <h1>Man must explore, and this is exploration at its greatest</h1>
-              <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-              <span class="meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on August 24, 2018</span>
+            <div class="site-heading">
+              <h1>Enquête de satisfaction</h1>
             </div>
           </div>
         </div>
@@ -92,7 +98,7 @@
                     <input type='text' name='prenom' id='prenom' placeholder='Prenom'/></p>
                     <p><input type='text' name='mail' id='mail' placeholder='Email'/>
                     <input type='number' min='18' max='99' name='age' id='age' placeholder='Âge'/></p>
-                    <p><select name="sportprefere">
+                    <select name="sportprefere">
                         <option disabled selected>Sport préféré</option>
                         <option value="Athlétisme/courseàpied">Athlétisme/course à pied</option>
                         <option value="Natation">Natation</option>
@@ -103,9 +109,9 @@
                         <option value="Sportséquestres">Sports équestres</option>
                         <option value="Toutes/pasdepréférence">Toutes/pas de préférence</option>
                         <option value="Autresdisciplines">Autres disciplines</option>
-                    </select></p>
-                    <input type="reset" value="Annuler" name="annuler">
-                    <input type="button" value="Envoyer" name="envoyer">
+                    </select>
+                    <p><input type="reset" value="Annuler" name="annuler">
+                    <input type="button" value="Suivant" name="suivant"></p>
                 </form>
             </div>
           </div>
