@@ -30,6 +30,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Function JS -->
+    <script language="javascript" src="js/fonction.js"></script>
+    
   </head>
 
   <body>
@@ -98,7 +102,7 @@
                     <input type='text' name='prenom' id='prenom' placeholder='Prenom'/></p>
                     <p><input type='text' name='mail' id='mail' placeholder='Email'/>
                     <input type='number' min='18' max='99' name='age' id='age' placeholder='Âge'/></p>
-                    <select name="sportprefere">
+                    <select name="sportprefere" id="sport">
                         <option disabled selected>Sport préféré</option>
                         <option value="Athlétisme/courseàpied">Athlétisme/course à pied</option>
                         <option value="Natation">Natation</option>
@@ -111,7 +115,7 @@
                         <option value="Autresdisciplines">Autres disciplines</option>
                     </select>
                     <p><input type="reset" value="Annuler" name="annuler" class="btn btn-primary"/>
-                    <a href="./Enquete2.html"><input type="button" value="Suivant" name="suivant" class="btn btn-primary"/></a></p>
+                    <input type="button" value="Suivant" name="suivant" class="btn btn-primary" onclick="verif()"/></p>
                 </form>
             </div>
           </div>
