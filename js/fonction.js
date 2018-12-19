@@ -1,4 +1,4 @@
-function verif()
+function verif_form()
       {
         var nom, prenom, mail, sport;
         nom =  document.getElementById("nom").value;
@@ -34,3 +34,10 @@ function verif()
           alert("Veuillez remplir tous les champs !");
         }
       }
+
+// --------------------------------------------------------------------
+
+function verif_check()
+{
+  
+}
