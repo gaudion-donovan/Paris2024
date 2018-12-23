@@ -30,6 +30,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+
+     <!-- Function JS -->
+     <script language="javascript" src="js/fonction.js"></script>
+
   </head>
 
   <body>
@@ -100,51 +104,51 @@
                     <th>A l’occasion de ces JO, avez-vous l’intention de suivre les épreuves :</th>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ4[]" value="Television"/> A la télévision</td>
+                    <td><input type="checkbox" name="reponseQ4[]" id="reponseQ4_1" value="Television"/> A la télévision</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ4[]" value="Stade"/> Dans les stades</td>
+                    <td><input type="checkbox" name="reponseQ4[]" id="reponseQ4_2" value="Stade"/> Dans les stades</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ4[]" value="Fanzone"/> Dans les Fanzones</td>
+                    <td><input type="checkbox" name="reponseQ4[]" id="reponseQ4_3" value="Fanzone"/> Dans les Fanzones</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ4[]" value="Pasdutout"/> Pas du tout</td>
+                    <td><input type="checkbox" name="reponseQ4[]" id="reponseQ4_4" value="Pasdutout"/> Pas du tout</td>
                   </tr> 
                   <tr><td><br></td></tr>
                   <tr>
                     <th>Quelle(s) discipline(s) avez-vous l’intention de suivre ?</th>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="Athletisme"/> Athlétisme/course à pied</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_1" value="Athletisme"/> Athlétisme/course à pied</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="Natation"/> Natation</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_2" value="Natation"/> Natation</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="Football"/> Football</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_3" value="Football"/> Football</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="Judo"/> Judo</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_4" value="Judo"/> Judo</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="Gymnastique"/> Gymnastique (artistique ou rythmique)</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_5" value="Gymnastique"/> Gymnastique (artistique ou rythmique)</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="Tennis"/> Tennis</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_6" value="Tennis"/> Tennis</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="SportsEquestres"/> Sports équestres</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_7" value="SportsEquestres"/> Sports équestres</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="Toutes"/> Toutes/pas de préférence</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_8" value="Toutes"/> Toutes/pas de préférence</td>
                   </tr> 
                   <tr>
-                    <td><input type="checkbox" name="reponseQ5[]" value="Autres"/> Autres disciplines</td>
+                    <td><input type="checkbox" name="reponseQ5[]" id="reponseQ5_9" value="Autres"/> Autres disciplines</td>
                   </tr>  
                 </table>
                 <p><input type="reset" value="Annuler" name="annuler"class="btn btn-primary"/>
-                <a href="./Enquete4.html"><input type="button" value="Suivant" name="suivant" class="btn btn-primary"/></a></p>
+                <input type="button" value="Suivant" name="suivant" class="btn btn-primary" onclick="verif_check()"/></p>
               </form>
             </div>
           </div>
