@@ -44,7 +44,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
           <img src="img/Paris2024.png" width="30" height="30">
           Paris 2024
         </a>
@@ -55,7 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Accueil</a>
+              <a class="nav-link" href="index.php">Accueil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html">Evenements</a>
@@ -141,6 +141,7 @@
     <div class="container-fluid text-center">
       <div class="row content">
         <div class="col-sm-2 sidenav">
+            <!-- Météo -->
             <div id="cont_NzUwNTZ8MnwxfDJ8MXwwMGE4ZTB8MnxGRkZGRkZ8Y3wx">
               <div id="spa_NzUwNTZ8MnwxfDJ8MXwwMGE4ZTB8MnxGRkZGRkZ8Y3wx">
                 <a id="a_NzUwNTZ8MnwxfDJ8MXwwMGE4ZTB8MnxGRkZGRkZ8Y3wx" href="http://www.meteocity.com/france/paris_v75056/" target="_blank" style="color:#333;text-decoration:none;">Météo</a> 
@@ -149,10 +150,12 @@
               <script type="text/javascript" src="http://widget.meteocity.com/js/NzUwNTZ8MnwxfDJ8MXwwMGE4ZTB8MnxGRkZGRkZ8Y3wx"></script>
             </div>
             <br/>
+            <!-- Agenda -->
             <iframe src="http://winky.fr/winky_widget_calendar/?wid=0&m=07&y=2024" style="width: 200px; height: 200px; border: none;"></iframe>
             <div>
-                <br/>
-              <a href=""><img src="img/pub.jpeg" title="pub Paris2024" width="200" height="150"/></a>
+              <br/>
+              <!-- PUB -->
+              <a href="https://youtu.be/NEdt23nJUhw"><img src="img/pub.jpeg" title="pub Paris2024" width="200" height="150"/></a>
             </div>
         </div>
         <div class="col-sm-8 text-center"> 
