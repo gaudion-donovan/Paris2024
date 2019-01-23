@@ -1,9 +1,9 @@
 <?php
-    require_once("modele/modele.class.php");
+    require_once ("modele/modele.class.php");
 
     class Controleur
     {
-        protected $unModele;
+        private $unModele;
 
         public function __construct($serveur, $bdd, $user, $mdp)
         {
@@ -35,6 +35,11 @@
         public function delete($id)
         {
             $this->unModele->delete($id);
+        }
+
+        public function update($id)
+        {
+            $this->unModele->update($id);
         }
     }
 ?>

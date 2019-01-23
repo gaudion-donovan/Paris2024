@@ -38,5 +38,13 @@ create table intervention
     foreign key(idclient) references client(idutil)
 
 );
+
+create table evenement
+(
+    idevent int(5) not null auto_increment,
+    nom varchar(50),
+    primary key(idevent) 
+); 
 insert into utilisateur values (null, "Jourquin", "Cedric", "cj@gmail.com", "root", "admin");
 insert into client values (null, "Gaudion", "Donovan", "gd@gmail.com", "root", "root", "adresse", "public");
+insert into evenement values (null, "Football: France/Allemagne");

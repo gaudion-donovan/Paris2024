@@ -1,7 +1,7 @@
 <?php
     class Modele
     {
-        protected $unPDO, $uneTable;
+        private $unPDO, $uneTable;
 
         public function __construct($serveur, $bdd, $user, $mdp)
         {
@@ -96,6 +96,27 @@
                 $requete = "delete from ".$this->uneTable." where ".$lesClauses.";";
                 $delete = $this->unPDO->prepare($requete);
                 $delete->execute($donnees);
+            }
+        }
+
+        public function update($id)
+        {
+            if($this->unPDO != null)
+            {
+                //$champs = array();
+                $clauses = array();
+                $donnees = array();
+                foreach($id as $cle=>$valeur)
+                {
+                    $champs[] = ":".$cle;
+                    $clauses[] = $cle."=:".$cle;
+                    $donnees[":".$cle] = $valeur;
+                }
+                //$lesChamps = implode("=", $champs);
+                $lesClauses = implode(" and ", $clauses);
+                //$requete = "update ".$this->uneTable." set nom= where ".$lesClauses.";";
+                $update = $this->unPDO->prepare($requete);
+                $update->execute($donnees);
             }
         }
     }

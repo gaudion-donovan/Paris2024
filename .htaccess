@@ -1,0 +1,12 @@
+#protège le fichier htaccess
+#htaccess file
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+#interdit le listing des fichiers
+options -indexes
+
+#gère les erreurs
+#ErrorDocument 403 http://127.0.0.1/Projetweb/erreur/403.php

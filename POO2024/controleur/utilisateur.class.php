@@ -1,7 +1,7 @@
 <?php
     class Utilisateur
     {
-        protected $idutil, $nom, $prenom, $email, $mdp, $typecompte;
+        private $idutil, $nom, $prenom, $email, $mdp, $typecompte;
 
         public function __construct()
         {
